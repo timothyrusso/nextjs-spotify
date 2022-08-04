@@ -1,2 +1,3 @@
-video: https://www.youtube.com/watch?v=3xrko3GpYoU&list=WL&index=107
-minuto 26
+video: https://www.youtube.com/watch?v=3xrko3GpYoU&list=WL&index=110
+
+minuto: 26
