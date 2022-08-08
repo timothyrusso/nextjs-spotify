@@ -39,6 +39,8 @@ function Sidebar() {
           <p>Your Episodes</p>
         </button>
         <hr className="border-t-[0.1px] border-gray-900"></hr>
+
+        <p className="cursor-pointer hover:text-white">playlist...</p>
       </div>
     </div>
   );
