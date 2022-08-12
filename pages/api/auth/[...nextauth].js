@@ -12,4 +12,18 @@ export default NextAuth({
     }),
   ],
   secret: process.env.JVT_SECRET,
+  pages: {
+    signIn: '/login',
+  },
+  callbacks: {
+    async jwt({ token, account, user }) {
+      // initial sign in
+      if (account && user) {
+        return {
+          ...token,
+          accessToken: account.access_token,
+        };
+      }
+    },
+  },
 });
