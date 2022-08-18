@@ -9,6 +9,12 @@ function login({ providers }) {
         src="https://links.papareact.com/9xl"
         alt="Spotify Logo"
       />
+
+      {Object.values(providers).map((provider) => (
+        <div key={provider.name}>
+          <button>Login with {provider.name}</button>
+        </div>
+      ))}
     </div>
   );
 }
