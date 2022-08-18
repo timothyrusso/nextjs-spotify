@@ -1,9 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { getProviders, signIn } from 'next-auth/react';
 
-function login() {
+function login({ providers }) {
   return (
-    <div>login page</div>
-  )
+    <div>
+      <img
+        className="w-52 mb-5"
+        src="https://links.papareact.com/9xl"
+        alt="Spotify Logo"
+      />
+    </div>
+  );
 }
 
-export default login
+export default login;
+
+// Server side rendering
+export async function getServerSideProps() {
+  const providers = await getProviders();
+
+  return {
+    props: {
+      providers,
+    },
+  };
+}
