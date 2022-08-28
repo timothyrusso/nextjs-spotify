@@ -7,7 +7,7 @@ export async function middleware(req) {
 
   const { pathname } = req.nextUrl;
 
-  if (pathname.startsWith('/_next')) return NextResponse.next();
+  // if (pathname.startsWith('/_next')) return NextResponse.next();
 
   // Allow the requests if the following is true
   // 1. Its a request for next-auth session & provider fetching
